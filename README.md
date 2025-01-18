@@ -1,27 +1,48 @@
-# BoletimDigital
+# Gestão de Alunos com Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+Este projeto é uma aplicação Angular que permite gerenciar dados de alunos, incluindo cadastro, atualização, remoção e cálculo da média das notas. A interface é construída utilizando formulários reativos e validações personalizadas, com suporte para manipulação e exibição dinâmica dos dados em uma tabela.
 
-## Development server
+https://angular17-boletim-digital.vercel.app/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Funcionalidades
 
-## Code scaffolding
+- **Cadastro de Alunos**: Adicione alunos informando nome e notas.
+- **Validações**: 
+  - Nome obrigatório e com no mínimo 3 caracteres.
+  - Notas obrigatórias, com valores entre 0 e 10.
+- **Edição de Dados**: Selecione um aluno para editar suas informações.
+- **Remoção**: Exclua alunos do sistema.
+- **Cálculo da Média**: Exibe automaticamente a média das notas de cada aluno.
+- **Cancelamento**: Cancele ações de edição para voltar ao modo de cadastro.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🛠️ Tecnologias Utilizadas
 
-## Build
+- **Angular**: Framework front-end.
+- **Reactive Forms**: Gerenciamento de formulários com validações reativas.
+- **Pipes**: Criação de `MediaPipe` para cálculo e exibição da média das notas.
+- **Bootstrap**: Estilização da interface.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 📂 Estrutura do Código
 
-## Running unit tests
+### Componentes
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **`Componente01Component`**: Gerencia as ações relacionadas aos alunos, como cadastro, edição, remoção e manipulação de botões.
+2. **`MediaPipe`**: Pipe personalizado para calcular a média das notas.
 
-## Running end-to-end tests
+### Modelo
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **`Aluno`**: Representa a estrutura de dados de um aluno, incluindo nome, nota1 e nota2.
 
-## Further help
+### Tabela
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Exibe a lista de alunos cadastrados, mostrando:
+  - Nome.
+  - Nota 1.
+  - Nota 2.
+  - Média das notas.
+  - Botão para selecionar o aluno.
+
+## Deploy do Projeto realizado no vercel
+https://angular17-boletim-digital.vercel.app/
+
+
